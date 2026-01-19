@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Advanced Fluid Mechanics — Interactive Master-Level Course</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <button id="tocToggle" class="tocToggle" type="button" aria-label="Toggle table of contents">☰ Contents</button>
+    <div class="brand">
+      <div class="brandTitle" id="pageTitle">Advanced Fluid Mechanics — Interactive Master-Level Course</div>
+      <div class="brandMeta" id="pageMeta">HTML/CSS/JavaScript single-page course with intermediate quizzes (≥15 questions each).</div>
+    </div>
+
+    <div class="progressWrap" aria-label="Progress">
+      <div class="progressBar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="progress" id="progress"></div>
+      </div>
+      <div class="progressLabel">Progress</div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" id="toc"></aside>
+    <div class="tocOverlay" id="tocOverlay" aria-hidden="true"></div>
+
+    <main class="main">
+      <div class="contentWrap">
+        <div id="content"></div>
+
+        <div class="bottomNav">
+          <button id="prevBtn" class="btn" type="button">← Previous</button>
+          <button id="nextBtn" class="btn primary" type="button">Next →</button>
+        </div>
+
+        <p class="muted" style="max-width:980px; margin:14px auto 0; padding:0 2px;">
+          Tip: You can bookmark any lesson. The current lesson id is stored in the URL hash (e.g., <code>#ch1-flow-rate</code>).
+        </p>
+      </div>
+    </main>
+  </div>
+
+  <script src="content.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
